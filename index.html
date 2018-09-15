@@ -37,31 +37,31 @@
     <section class="header__promo">
       <h2 class="visually-hidden">Как мы работаем</h2>
       <ul class="header__slider">
-        <li class="header__slide">
+        <li class="header__slide slide1">
           <h3>Долго, дорого, скрупулезно.</h3>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
           <a href="#" class="btn">узнать больше</a>
         </li>
-        <li class="header__slide">
+        <li class="header__slide slide2">
           <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <p>Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.</p>
           <a href="#" class="btn">узнать больше</a>
         </li>
-        <li class="header__slide">
+        <li class="header__slide slide3">
           <h3>Только ночь, только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
           <a href="#" class="btn">узнать больше</a>
         </li>
       </ul>
       <ul class="header__slider-buttons">
         <li class="header__slide-button">
-          <button name="button" class="slide-btn">Первый слайд</button>
+          <button name="button" class="slide-btn slide-btn1">Первый слайд</button>
         </li>
         <li class="header__slide-button">
-          <button name="button" class="slide-btn">Второй слайд</button>
+          <button name="button" class="slide-btn slide-btn2">Второй слайд</button>
         </li>
         <li class="header__slide-button">
-          <button name="button" class="slide-btn">Третий слайд</button>
+          <button name="button" class="slide-btn slide-btn3">Третий слайд</button>
         </li>
       </ul>
     </section>
@@ -100,19 +100,21 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-      <div>
-        <p>с 2004 года Любим точность во всем:</p>
-        <table>
+      <div class="aboutus__table-box">
+        <table class="aboutus__table">
           <tbody>
             <tr>
-              <th>146<sup>%</sup></th>
-              <th>100<sup>%</sup></th>
-              <th>50<sup>%</sup></th>
+              <th colspan="3">с 2004 года Любим точность во всем:</th>
             </tr>
             <tr>
-              <th>Уровень самоотдачи</th>
-              <th>Соблюдение сроков</th>
-              <th>Минимальная предоплата</th>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
             </tr>
           </tbody>
         </table>
@@ -139,14 +141,16 @@
   <footer class="footer page__footer">
     <section id="footer__contacts" class="contacts footer__contacts">
       <h2 class="visually-hidden">Наши контакты:</h2>
-      <img src="img/map.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="contacts__map-img">
-      <div class="contacts__adds">
-        <p>NЁRDS DESIGN STUDIO</p>
-        <p>191186, Санкт-Петербург,
-          <br>
-          ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#" class="btn">напишите нам</a>
+      <div class="contacts__adds-map">
+        <img src="img/map.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="contacts__map-img">
+        <div class="contacts__adds">
+          <p class="contacts__name">NЁRDS DESIGN STUDIO</p>
+          <p>191186, Санкт-Петербург,
+            <br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn">напишите нам</a>
+        </div>
       </div>
       <div class="contacts__box">
         <button type="button" name="button" class="close">Закрыть</button>
@@ -154,16 +158,17 @@
           <h2>Напишите нам</h2>
           <ul>
             <li>
-              <label for="name-contacts">Ваше имя:</label>
-              <input type="text" name="name-contacts" id="name-contacts" placeholder="Имя Фамилия">
+              <label for="name-contacts">Ваше имя:</label><br>
+              <input type="text" name="name-contacts" id="name-contacts" placeholder="Имя Фамилия" required>
             </li>
             <li>
-              <label for="email-contacts">Ваш e-mail:</label>
-              <input type="email" name="email-contacts" id="email-contacts" placeholder="email@example.com">
+              <label for="email-contacts">Ваш e-mail:</label><br>
+              <input type="email" name="email-contacts" id="email-contacts" placeholder="email@example.com" required>
             </li>
           </ul>
-          <label for="textarea-contacts">Текст письма:</label>
+          <label for="textarea-contacts">Текст письма:</label><br>
           <textarea name="text-contacts" id="textarea-contacts" rows="10" cols="80" placeholder="В свободной форме"></textarea>
+          <button type="submit" name="button" class="btn">Отправить</button>
         </form>
       </div>
     </section>
@@ -172,13 +177,13 @@
       <div class="footer__socio-blok">
         <ul>
           <li class="footer__socio-item">
-            <a href="#" class="footer__socio-link">Вконтакте</a>
+            <a href="#" class="footer__socio-link socio-vk">Вконтакте</a>
           </li>
           <li class="footer__socio-item">
-            <a href="#" class="footer__socio-link">Фейсбук</a>
+            <a href="#" class="footer__socio-link socio-fb">Фейсбук</a>
           </li>
           <li class="footer__socio-item">
-            <a href="#" class="footer__socio-link">Инстаграм</a>
+            <a href="#" class="footer__socio-link socio-in">Инстаграм</a>
           </li>
         </ul>
       </div>
