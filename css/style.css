@@ -27,6 +27,11 @@ a {
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .btn:hover {
@@ -44,8 +49,50 @@ a {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1162px; /*???? pixel perfect????? 1200px*/
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+
+.header .container {
+  padding-top: 50px;
+}
+
+.header__navigation {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.header__logo{
+  margin: 0;
+  padding: 0;
+}
+.header__site-nav {
+  width: 485px;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: 179px;
 }
 
 .header__navigation a {
@@ -62,24 +109,65 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header__cart {
+  margin-left: auto;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.header__cart::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(../img/sprites-box.png);
+  background-repeat: no-repeat;
+  background-position: -64px -47px;
+  padding-left: 23px;
+
+  display: inline-block;
+}
+
 .header__current-link {
   border-bottom: 2px solid #fb565a;
 }
 
-.header__slider h3 {
+.header__promo {
+  position: relative;
+}
+
+.header__slider {
+  padding: 0;
+  margin: 0;
+}
+
+.header__slide h3 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 24px;
 }
 
-.header__slider p {
+.header__slide p {
   color: #283136;
+  margin-bottom: 50px;
 }
 
 .header__slide {
-  background-size: 760px 431px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 100% -20px;
+
+  min-height: 413px;
+}
+
+.header__slide-box {
+  padding: 0;
+  padding-top: 58px;
+  padding-bottom: 80px;
+
 }
 
 .slide1 {
@@ -92,6 +180,18 @@ a {
 
 .slide3 {
     background-image: url(../img/header-slide3.png);
+}
+
+.header__slider-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 123px;
+  justify-content: space-around;
+  position: absolute;
+  top: 270px;
+  /* bottom: 85px; */
+  left: 41%;
 }
 
 .slide-btn {
