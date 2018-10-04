@@ -44,11 +44,10 @@
       <div class="main__box-wrapper">
         <section class="filters main__filters">
           <h2 class="visually-hidden">Фильтр по магазину</h2>
-          <form action class="filters__form">
+          <form action class="filters__form" method="post">
             <fieldset class="filters__price">
               <legend>Стоимость:</legend>
               <div class="filters__price-ranging">
-                <!--Здесь будет фильтр цен бегунками!?-->
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar" style="margin-left: 20%; width: 30%"></div>
@@ -231,8 +230,10 @@
         </div>
         <div class="container">
           <div class="contacts__box">
-            <button type="button" name="button" class="close">Закрыть</button>
-            <form action="" class="contacts__form">
+            <button type="button" name="button" class="close">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <form action="" class="contacts__form" method="post">
               <h2>Напишите нам</h2>
               <ul>
                 <li>
