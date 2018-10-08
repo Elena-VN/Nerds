@@ -70,12 +70,13 @@
             <li class="header__slide-button">
               <input type="radio" id="btn3" name="slid-btn" class="slide-btn3">
             </li>
-            </ul>
+          </ul>
         </section>
       </div>
     </header>
-    <main class="main page__main container">
-      <section class="services main__services">
+
+    <main class="main page__main">
+      <section class="services main__services container">
         <h2 class="visually-hidden">Что мы предлагаем:</h2>
         <ul class="services__list">
           <li class="services__item">
@@ -101,13 +102,13 @@
         <hr class="delimiter">
       </section>
 
-      <section id="main_aboutus" class="aboutus main_aboutus">
+      <section id="main_aboutus" class="aboutus main_aboutus container">
         <h2 class="visually-hidden">Немного о нас:</h2>
         <div class="aboutus__info">
           <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
           <p>Исповедуем принципы минимализма и чистоты.
             Ставим математический расчет <br>
-             превыше креатива. Работаем не покладая рук, как роботы.</p>
+            превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p>Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
@@ -118,24 +119,25 @@
         <div class="aboutus__table-box">
           <table class="aboutus__table">
             <tbody>
-              <tr>
-                <th colspan="3">с 2004 года Любим точность во всем:</th>
-              </tr>
-              <tr>
-                <td>146<sup>%</sup></td>
-                <td>100<sup>%</sup></td>
-                <td>50<sup>%</sup></td>
-              </tr>
-              <tr>
-                <td>Уровень самоотдачи</td>
-                <td>Соблюдение сроков</td>
-                <td>Минимальная предоплата</td>
-              </tr>
+            <tr>
+              <th colspan="3">с 2004 года Любим точность во всем:</th>
+            </tr>
+            <tr>
+              <td>146<sup>%</sup></td>
+              <td>100<sup>%</sup></td>
+              <td>50<sup>%</sup></td>
+            </tr>
+            <tr>
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
             </tbody>
           </table>
         </div>
       </section>
-      <section id="main__clients" class="clients main__clients">
+
+      <section id="main__clients" class="clients main__clients container">
         <hr class="delimiter">
         <h2 class="visually-hidden">Наши клиенты:</h2>
         <ul class="clients__list">
@@ -155,18 +157,20 @@
         <hr class="delimiter">
       </section>
     </main>
+
     <footer class="footer page__footer ">
       <section id="footer__contacts" class="contacts footer__contacts">
         <h2 class="visually-hidden">Наши контакты:</h2>
         <div class="contacts__adds-map container">
-          <img src="img/map.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="contacts__map-img visually-hidden">
+          <img src="img/map.png" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+               class="contacts__map-img visually-hidden">
           <div class="contacts__adds">
             <p class="contacts__name">NЁRDS DESIGN STUDIO</p>
             <p>191186, Санкт-Петербург,
               <br>
               ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone">тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn js-contacts-btn">напишите нам</a>
+            <a href="#" class="btn connection-btn">напишите нам</a>
           </div>
         </div>
         <div class="contacts__popup">
@@ -192,6 +196,7 @@
         </div>
         <div class="popup-overlay "></div>
       </section>
+
       <section class="footer__socio container">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="footer__socio-block">
@@ -219,7 +224,7 @@
         </div>
       </section>
     </footer>
-    <script type="text/javascript" src="js/popup.js">
-    </script>
+
+    <script src="js/popup.js"></script>
   </body>
 </html>
