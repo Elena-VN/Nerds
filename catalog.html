@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Веб-студия - Nёrds</title>
   </head>
+
   <body class="catalog">
     <h1 class="visually-hidden">Веб-студия - Nords</h1>
     <header class="header catalog__header">
@@ -40,8 +41,9 @@
         </section>
       </div>
     </header>
+
     <main class="main catalog__main container">
-      <div class="main__box-wrapper">
+      <div class="main__box-wrapper container">
         <section class="filters main__filters">
           <h2 class="visually-hidden">Фильтр по магазину</h2>
           <form action class="filters__form" method="post">
@@ -69,37 +71,40 @@
             </fieldset>
             <fieldset class="filters__grid">
               <legend>Сетка:</legend>
-              <p><input type="radio" class="radio" name="grid" id="adaptive" value="adaptive" checked>
-              <label for="adaptive">Адаптивная</label>
+              <p>
+                <input type="radio" class="radio" name="grid" id="adaptive" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
               </p>
-              <p><input type="radio"  class="radio" name="grid" id="fixed" value="fixed">
-              <label for="fixed">Фиксированная</label>
+              <p>
+                <input type="radio"  class="radio" name="grid" id="fixed" value="fixed">
+                <label for="fixed">Фиксированная</label>
               </p>
-              <p><input type="radio"  class="radio" name="grid" id="stretch" value="stretch">
-              <label for="stretch">Резиновая</label>
+              <p>
+                <input type="radio"  class="radio" name="grid" id="stretch" value="stretch">
+                <label for="stretch">Резиновая</label>
               </p>
             </fieldset>
             <fieldset class="filters__feature">
               <legend>Особенности:</legend>
               <p>
-              <input type="checkbox" class="checkbox" name="feature" id="slider" value="slider" checked>
-              <label for="slider">Слайдер</label>
+                <input type="checkbox" class="checkbox" name="feature" id="slider" value="slider" checked>
+                <label for="slider">Слайдер</label>
               </p>
               <p>
-              <input type="checkbox" class="checkbox" name="feature" id="advantage" value="advantage">
-              <label for="advantage">Блок преимуществ</label>
+                <input type="checkbox" class="checkbox" name="feature" id="advantage" value="advantage">
+                <label for="advantage">Блок преимуществ</label>
               </p>
               <p>
-              <input type="checkbox" class="checkbox" name="feature" id="news" value="news" checked>
-              <label for="news">Новости</label>
+                <input type="checkbox" class="checkbox" name="feature" id="news" value="news" checked>
+                <label for="news">Новости</label>
               </p>
               <p>
-              <input type="checkbox" class="checkbox" name="feature" id="gallery" value="gallery">
-              <label for="gallery">Галерея</label>
+                <input type="checkbox" class="checkbox" name="feature" id="gallery" value="gallery">
+                <label for="gallery">Галерея</label>
               </p>
               <p>
-              <input type="checkbox" class="checkbox" name="feature" id="basket" value="basket">
-              <label for="basket">Корзина</label>
+                <input type="checkbox" class="checkbox" name="feature" id="basket" value="basket">
+                <label for="basket">Корзина</label>
               </p>
             </fieldset>
             <button type="submit" name="button" class="btn-submit">показать</button>
@@ -225,7 +230,7 @@
               <br>
               ул. Б. Конюшенная, д. 19/8</p>
             <p class="phone">тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn js-contacts-btn">напишите нам</a>
+            <a href="#" class="btn connection-btn">напишите нам</a>
           </div>
         </div>
         <div class="contacts__popup">
@@ -279,7 +284,6 @@
       </section>
     </footer>
 
-    <script type="text/javascript" src="js/popup.js">
-    </script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
